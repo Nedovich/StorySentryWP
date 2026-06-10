@@ -1,0 +1,148 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": false,
+		"layout": {
+			"contentSize": "760px",
+			"wideSize": "1380px"
+		},
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"custom": false,
+			"palette": [
+				{ "slug": "paper", "name": "Paper", "color": "#FAFAF7" },
+				{ "slug": "paper-2", "name": "Paper 2", "color": "#F4F3EF" },
+				{ "slug": "ink", "name": "Ink", "color": "#14181F" },
+				{ "slug": "ink-2", "name": "Ink 2", "color": "#2C333D" },
+				{ "slug": "mute", "name": "Mute", "color": "#5B6473" },
+				{ "slug": "mute-2", "name": "Mute 2", "color": "#8A92A0" },
+				{ "slug": "rule", "name": "Rule", "color": "#C9CDD4" },
+				{ "slug": "rule-soft", "name": "Rule Soft", "color": "#E3E6EB" },
+				{ "slug": "card", "name": "Card", "color": "#FFFFFF" },
+				{ "slug": "cool", "name": "Cool", "color": "#EEF1F6" },
+				{ "slug": "accent", "name": "Accent", "color": "#1F3A8A" },
+				{ "slug": "accent-ink", "name": "Accent Ink", "color": "#0E1D4A" },
+				{ "slug": "accent-soft", "name": "Accent Soft", "color": "#DDE4F5" }
+			]
+		},
+		"spacing": {
+			"units": [ "px", "rem", "%", "vh", "vw" ],
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{ "slug": "2xs", "name": "2XS", "size": "4px" },
+				{ "slug": "xs", "name": "XS", "size": "6px" },
+				{ "slug": "sm", "name": "SM", "size": "12px" },
+				{ "slug": "md", "name": "MD", "size": "18px" },
+				{ "slug": "lg", "name": "LG", "size": "28px" },
+				{ "slug": "xl", "name": "XL", "size": "36px" },
+				{ "slug": "2xl", "name": "2XL", "size": "60px" }
+			]
+		},
+		"typography": {
+			"dropCap": false,
+			"fontFamilies": [
+				{
+					"slug": "inter",
+					"name": "Inter",
+					"fontFamily": "\"Inter\", system-ui, sans-serif"
+				},
+				{
+					"slug": "inter-tight",
+					"name": "Inter Tight",
+					"fontFamily": "\"Inter Tight\", \"Inter\", system-ui, sans-serif"
+				},
+				{
+					"slug": "source-serif-4",
+					"name": "Source Serif 4",
+					"fontFamily": "\"Source Serif 4\", Georgia, serif"
+				},
+				{
+					"slug": "jetbrains-mono",
+					"name": "JetBrains Mono",
+					"fontFamily": "\"JetBrains Mono\", ui-monospace, monospace"
+				}
+			],
+			"fontSizes": [
+				{ "slug": "caption", "name": "Caption", "size": "10px" },
+				{ "slug": "xs", "name": "XS", "size": "12px" },
+				{ "slug": "sm", "name": "SM", "size": "13px" },
+				{ "slug": "base", "name": "Base", "size": "15px" },
+				{ "slug": "body", "name": "Body", "size": "19px" },
+				{ "slug": "lg", "name": "LG", "size": "22px" },
+				{ "slug": "xl", "name": "XL", "size": "44px" },
+				{ "slug": "display", "name": "Display", "size": "56px" }
+			],
+			"lineHeight": true
+		},
+		"custom": {
+			"storysentry": {
+				"radius": {
+					"sm": "4px",
+					"md": "6px"
+				},
+				"spacing": {
+					"gap": "18px",
+					"gapLg": "28px",
+					"cardPad": "14px"
+				}
+			}
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--paper)",
+			"text": "var(--wp--preset--color--ink)"
+		},
+		"spacing": {
+			"padding": {
+				"left": "0",
+				"right": "0"
+			},
+			"blockGap": "0"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--inter)",
+			"fontSize": "var(--wp--preset--font-size--base)",
+			"lineHeight": "1.5"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter-tight)",
+					"fontWeight": "700",
+					"letterSpacing": "0"
+				}
+			},
+			"button": {
+				"border": {
+					"radius": "6px"
+				},
+				"spacing": {
+					"padding": {
+						"top": "10px",
+						"right": "14px",
+						"bottom": "10px",
+						"left": "14px"
+					}
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter-tight)",
+					"fontSize": "13px",
+					"fontWeight": "600"
+				}
+			},
+			"link": {
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{ "name": "header", "title": "Header", "area": "header" },
+		{ "name": "footer", "title": "Footer", "area": "footer" }
+	]
+}
